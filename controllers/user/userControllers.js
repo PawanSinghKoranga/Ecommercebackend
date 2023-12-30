@@ -133,7 +133,7 @@ exports.forgotpassword = async(req,res)=>{
             
             // Set token and logo value in ejs file
             const data = {
-                passwordresetlink:`http://localhost:3000/resetpassword/${userfind.id}/${setusertoken.verifytoken}`,
+                passwordresetlink:`https://uniquewatches.netlify.app/resetpassword/${userfind.id}/${setusertoken.verifytoken}`,
                 logo:"https://cdn-icons-png.flaticon.com/128/732/732200.png"
             }
             // set dynamic datavalue in ejs
