@@ -21,7 +21,7 @@ const userauthenticate = async(req,res,next)=>{
         next();
 
     } catch (error) {
-        res.status(400).json({error:"Unauthorized No token Provide"})
+        res.status(400).json({error:"Please login first , then you can add to cart"})
     }
 }
 

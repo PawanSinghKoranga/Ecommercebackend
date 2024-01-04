@@ -120,7 +120,7 @@ exports.forgotpassword = async(req,res)=>{
         if(userfind){
             // token generate for password change
             const token = jwt.sign({_id:userfind._id},SECRET_KEY,{
-                expiresIn:"120s"
+                expiresIn:"300s"
             });
 
             const setusertoken = await userDB.findByIdAndUpdate({_id:userfind._id},{verifytoken:token},{new:true});
